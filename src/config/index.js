@@ -21,7 +21,7 @@
 
 // module.exports = { connect };
 
-const mMONGOOSE = require("mongoose");
+const mongoose = require("mongoose");
 
 async function connect() {
     try {
@@ -30,7 +30,7 @@ async function connect() {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         };
-        await mMONGOOSE.connect(process.env.DATABASE_URL, connectionParams);
+        await mongoose.connect(process.env.DATABASE_URL, connectionParams);
 
         console.log("Kết nối cơ sở dữ liệu thành công !!!");
 
