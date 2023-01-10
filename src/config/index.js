@@ -25,6 +25,7 @@ const mMONGOOSE = require("mongoose");
 
 async function connect() {
     try {
+        await mongoose.set("strictQuery", false)
         const connectionParams = {
             useNewUrlParser: true,
             useUnifiedTopology: true,
