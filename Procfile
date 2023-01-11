@@ -1,1 +1,1 @@
-web: npm src/index.js
+node:web src/index.js
