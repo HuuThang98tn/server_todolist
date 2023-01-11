@@ -20,6 +20,7 @@ class AuthController {
             })
 
         } catch (error) {
+            console.log(error);
             res.json({
                 code: 400,
                 message: "Error while authenticating",
